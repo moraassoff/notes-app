@@ -1,23 +1,30 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Comic Sans MS', 'Brush Script MT', cursive;
+    background-color: #ffe6f2;
+    color: #333;
     margin: 0;
     padding: 0;
 }
 
 #app {
     width: 80%;
-    margin: auto;
+    margin: 2em auto;
+    text-align: center;
 }
 
-#notes-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 10px;
+h1 {
+    color: #ff1493;
 }
 
-.note {
-    border: 1px solid #ccc;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-}
+button, input[type="submit"] {
+    background-color: #ff1493;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-ra

@@ -1,24 +1,22 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const notesGrid = document.getElementById('notes-grid');
-    const newNoteButton = document.getElementById('new-note');
+const express = require('express');
+const bodyParser = require('body-parser');
+const noteRoutes = require('./routes/notes');
+const path = require('path');
 
-    // Función para obtener notas
-    async function fetchNotes() {
-        const response = await fetch('/notas');
-        const notes = await response.json();
-        notesGrid.innerHTML = notes.map(note => `
-            <div class="note">
-                <h2>${note.title}</h2>
-                <p>${note.content}</p>
-                <small>${new Date(note.createdAt).toLocaleString()}</small>
-            </div>
-        `).join('');
-    }
+const app = express();
 
-    newNoteButton.addEventListener('click', () => {
-        // Redirigir a la página de creación de nota
-        window.location.href = '/edit';
-    });
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.static(path.join(__dirname, 'public')));
 
-    fetchNotes();
+app.use(noteRoutes);
+
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
+
+app.get('/edit', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'edit.html'));
+});
+
+module.exports = app;

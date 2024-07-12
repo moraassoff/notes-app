@@ -1,1 +1,12 @@
-[]
+[
+  {
+    "id": "31e2906d-14e8-4c6e-865d-47bc4b6704c8",
+    "title": "Nota1",
+    "content": "Esta nota es una prueba",
+    "tags": [
+      "nota1"
+    ],
+    "createdAt": "2024-07-12T02:15:06.794Z",
+    "updatedAt": "2024-07-12T02:15:06.794Z"
+  }
+]
