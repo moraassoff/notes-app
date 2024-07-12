@@ -27,4 +27,41 @@ button, input[type="submit"] {
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-    border-ra
+    border-radius: 12px;
+    font-family: 'Comic Sans MS', 'Brush Script MT', cursive;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #ff69b4;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid #ff1493;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'Comic Sans MS', 'Brush Script MT', cursive;
+}
+
+#notes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.note {
+    border: 1px solid #ff1493;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #fff0f5;
+    transition: transform 0.2s;
+}
+
+.note:hover {
+    transform: scale(1.05);
+    background-color: #ffccdd;
+}
