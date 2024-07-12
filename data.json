@@ -1,12 +1,23 @@
 [
   {
-    "id": "31e2906d-14e8-4c6e-865d-47bc4b6704c8",
-    "title": "Nota1",
-    "content": "Esta nota es una prueba",
+    "id": "09801216-17e3-407a-beac-e900af32c095",
+    "title": "Prueba nota",
+    "content": "Esta es una prueba",
     "tags": [
-      "nota1"
+      "#Caso1",
+      "#Ambienteweb"
     ],
-    "createdAt": "2024-07-12T02:15:06.794Z",
-    "updatedAt": "2024-07-12T02:15:06.794Z"
+    "createdAt": "2024-07-12T02:50:30.224Z",
+    "updatedAt": "2024-07-12T02:50:30.224Z"
+  },
+  {
+    "id": "c0963946-2168-4354-b468-7d385d0b884c",
+    "title": "Bienvenido a la App de Notas",
+    "content": "En esta app vamos a abarcar funcionalidades como lo son Crear, Guardar, Editar y Eliminar una nota",
+    "tags": [
+      "#Crud"
+    ],
+    "createdAt": "2024-07-12T02:51:44.780Z",
+    "updatedAt": "2024-07-12T02:51:44.780Z"
   }
 ]

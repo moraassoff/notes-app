@@ -1,7 +1,7 @@
 {
   "name": "notes-app",
   "version": "1.0.0",
-  "description": "Una aplicación para gestionar notas usando Node.js, Express, y Pug",
+  "description": "Caso1 App de notas",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
